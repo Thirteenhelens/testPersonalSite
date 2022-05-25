@@ -1,26 +1,17 @@
 import "./App.css";
+import { useState } from "react";
+// 
+import React from "react";
+import LandingPage from "../landingPage/landingPage";
+import { BrowserRouter as Router, Switch, Route, Link, Routes, BrowserRouter } from "react-router-dom";
+// 
 
-function App() {
+export default function App() {
   return (
-    <div
-      id="mainContentContainer"
-      class="bg-darker h-screen w-screen grid content-center grid-cols-5 gap-x-8 text-center p-5"
-    >
-      <div />
-      <div class="bg-main p-4 hover:bg-light cursor-pointer ">
-        <p class="text-7xl">hey!</p>
-      </div>
-
-      <div class="bg-main p-4 hover:bg-light cursor-pointer">
-        <p class="text-7xl">I'm</p>
-      </div>
-
-      <div class="bg-main p-4 hover:bg-light cursor-pointer">
-        <p class="text-7xl">Jack</p>
-      </div>
-      <div />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
-
-export default App;
