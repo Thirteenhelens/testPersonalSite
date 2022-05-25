@@ -21,13 +21,14 @@ export default function LandingPage() {
       class="
       p-5
       grid
-      gap-y-8
+      gap-y-20
       h-screen
       w-screen
       bg-darker
-      grid-cols-1
+      md:gap-x-8 
       text-center
-      sm:grid gap-x-8 grid-cols-5 content-center
+      md:grid-cols-5
+      md:content-center
       "
     >
       <div />
@@ -53,6 +54,10 @@ export default function LandingPage() {
         </p>
       </div>
       <div />
+
+      <div>
+        <p class="text-white sm:opacity-0">tap on a card to get started :)</p>
+      </div>
     </div>
   );
 }

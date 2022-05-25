@@ -7,6 +7,7 @@ module.exports = {
       main: "#3c7a89",
       light: "#9fa2b2",
       lighter: "#dbc2cf",
+      white: "#FFFFFF",
     },
   },
   plugins: [],

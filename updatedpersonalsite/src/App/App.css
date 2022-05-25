@@ -494,20 +494,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   cursor: pointer;
 }
 
-.grid-cols-5 {
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-}
-
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
-.grid-rows-3 {
-  grid-template-rows: repeat(3, minmax(0, 1fr));
+.grid-cols-5 {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
 }
 
 .content-center {
   align-content: center;
+}
+
+.gap-y-8 {
+  row-gap: 2rem;
 }
 
 .gap-x-8 {
@@ -515,8 +515,24 @@ Ensure the default browser behavior of the `hidden` attribute.
           column-gap: 2rem;
 }
 
-.gap-y-8 {
-  row-gap: 2rem;
+.gap-y-5 {
+  row-gap: 1.25rem;
+}
+
+.gap-y-10 {
+  row-gap: 2.5rem;
+}
+
+.gap-y-14 {
+  row-gap: 3.5rem;
+}
+
+.gap-y-16 {
+  row-gap: 4rem;
+}
+
+.gap-y-20 {
+  row-gap: 5rem;
 }
 
 .bg-light {
@@ -565,6 +581,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1;
 }
 
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 .hover\:bg-light:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(159 162 178 / var(--tw-bg-opacity));
@@ -574,10 +595,32 @@ Ensure the default browser behavior of the `hidden` attribute.
   .sm\:grid {
     display: grid;
   }
+
+  .sm\:text-white {
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+  }
+
+  .sm\:opacity-0 {
+    opacity: 0;
+  }
 }
 
 @media (min-width: 768px) {
   .md\:grid {
     display: grid;
+  }
+
+  .md\:grid-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  .md\:content-center {
+    align-content: center;
+  }
+
+  .md\:gap-x-8 {
+    -webkit-column-gap: 2rem;
+            column-gap: 2rem;
   }
 }
