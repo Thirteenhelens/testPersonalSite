@@ -1,6 +1,8 @@
 import { useState } from "react";
-export default function landingPage() {
-  async function useHover() {
+import { Link } from "react-router-dom";
+
+export default function LandingPage() {
+  function useHover() {
     const [hovering, setHovering] = useState(false);
     const onHoverProps = {
       onMouseEnter: () => setHovering(true),
@@ -13,27 +15,35 @@ export default function landingPage() {
   const [heyHover, heyHoverProps] = useHover();
   const [jackHover, jackHoverProps] = useHover();
 
+  const test = () => {
+    console.log("poop");
+  };
+
   return (
     <div
       id="mainContentContainer"
       class="bg-darker h-screen w-screen grid content-center grid-cols-5 gap-x-8 text-center p-5"
     >
       <div />
-      <div class="bg-main p-4 hover:bg-light cursor-pointer ">
-        <p {...heyHoverProps} class="text-7xl">
-          {heyHover ? "about" : "hey!"}
+      <div
+        onClick={test}
+        {...heyHoverProps}
+        class="bg-main p-4 hover:bg-light cursor-pointer"
+      >
+        <p class="text-7xl">
+          {heyHover ? <Link to="/AboutMe">about</Link> : "hey!"}
         </p>
       </div>
 
       <div class="bg-main p-4 hover:bg-light cursor-pointer">
         <p {...imHoverProps} class="text-7xl">
-          {imHover ? "my work" : "I'm"}
+          {imHover ? <Link to="/MyWork">my work</Link> : "I'm"}
         </p>
       </div>
 
       <div class="bg-main p-4 hover:bg-light cursor-pointer">
         <p {...jackHoverProps} class="text-7xl">
-          {jackHover ? "Contact" : "Jack"}
+          {jackHover ? <Link to="/ContactMe">contact</Link> : "Jack"}
         </p>
       </div>
       <div />
