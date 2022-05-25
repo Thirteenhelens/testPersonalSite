@@ -15,34 +15,40 @@ export default function LandingPage() {
   const [heyHover, heyHoverProps] = useHover();
   const [jackHover, jackHoverProps] = useHover();
 
-  const test = () => {
-    console.log("poop");
-  };
-
   return (
     <div
       id="mainContentContainer"
-      class="bg-darker h-screen w-screen grid content-center grid-cols-5 gap-x-8 text-center p-5"
+      class="
+      p-5
+      grid
+      gap-y-8
+      h-screen
+      w-screen
+      bg-darker
+      grid-cols-1
+      text-center
+      sm:grid gap-x-8 grid-cols-5 content-center
+      "
     >
       <div />
-      <div
-        onClick={test}
-        {...heyHoverProps}
-        class="bg-main p-4 hover:bg-light cursor-pointer"
-      >
+
+      <div {...heyHoverProps} class="bg-main p-4 hover:bg-light cursor-pointer">
         <p class="text-7xl">
           {heyHover ? <Link to="/ContactMe">contact</Link> : "hey!"}
         </p>
       </div>
 
-      <div class="bg-main p-4 hover:bg-light cursor-pointer">
-        <p {...imHoverProps} class="text-7xl">
+      <div {...imHoverProps} class="bg-main p-4 hover:bg-light cursor-pointer">
+        <p class="text-7xl">
           {imHover ? <Link to="/MyWork">my work</Link> : "I'm"}
         </p>
       </div>
 
-      <div class="bg-main p-4 hover:bg-light cursor-pointer">
-        <p {...jackHoverProps} class="text-7xl">
+      <div
+        {...jackHoverProps}
+        class="bg-main p-4 hover:bg-light cursor-pointer"
+      >
+        <p class="text-7xl">
           {jackHover ? <Link to="/AboutMe">about</Link> : "Jack"}
         </p>
       </div>
