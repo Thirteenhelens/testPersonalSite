@@ -31,7 +31,7 @@ export default function LandingPage() {
         class="bg-main p-4 hover:bg-light cursor-pointer"
       >
         <p class="text-7xl">
-          {heyHover ? <Link to="/AboutMe">about</Link> : "hey!"}
+          {heyHover ? <Link to="/ContactMe">contact</Link> : "hey!"}
         </p>
       </div>
 
@@ -43,7 +43,7 @@ export default function LandingPage() {
 
       <div class="bg-main p-4 hover:bg-light cursor-pointer">
         <p {...jackHoverProps} class="text-7xl">
-          {jackHover ? <Link to="/ContactMe">contact</Link> : "Jack"}
+          {jackHover ? <Link to="/AboutMe">about</Link> : "Jack"}
         </p>
       </div>
       <div />
