@@ -8,13 +8,13 @@ import { Route, Routes, BrowserRouter } from "react-router-dom";
 
 export default function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<LandingPage />} />
-        <Route path="/MyWork" element={<WorkPage />} />
-        <Route path="/AboutMe" element={<AboutPage />} />
-        <Route path="/ContactMe" element={<ContactPage />} />
-      </Routes>
-    </BrowserRouter>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/MyWork" element={<WorkPage />} />
+          <Route path="/Home" element={<LandingPage />} />
+          <Route path="/AboutMe" element={<AboutPage />} />
+          <Route path="/ContactMe" element={<ContactPage />} />
+        </Routes>
+      </BrowserRouter>
   );
 }

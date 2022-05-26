@@ -18,18 +18,7 @@ export default function LandingPage() {
   return (
     <div
       id="mainContentContainer"
-      class="
-      p-5
-      grid
-      gap-y-20
-      h-screen
-      w-screen
-      bg-darker
-      md:gap-x-8 
-      text-center
-      md:grid-cols-5
-      md:content-center
-      "
+      class="p-5 grid gap-y-20 h-screen w-screen bg-darker md:gap-x-8 text-center md:grid-cols-5 md:content-center"
     >
       <div />
 
