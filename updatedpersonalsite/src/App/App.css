@@ -544,19 +544,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(219 194 207 / var(--tw-bg-opacity));
 }
 
-.bg-main {
-  --tw-bg-opacity: 1;
-  background-color: rgb(60 122 137 / var(--tw-bg-opacity));
-}
-
 .bg-dark {
   --tw-bg-opacity: 1;
   background-color: rgb(46 71 86 / var(--tw-bg-opacity));
-}
-
-.bg-darker {
-  --tw-bg-opacity: 1;
-  background-color: rgb(22 38 46 / var(--tw-bg-opacity));
 }
 
 .p-5 {
