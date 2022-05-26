@@ -490,8 +490,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 100vh;
 }
 
+.min-h-full {
+  min-height: 100%;
+}
+
+.min-h-screen {
+  min-height: 100vh;
+}
+
 .w-screen {
   width: 100vw;
+}
+
+.min-w-full {
+  min-width: 100%;
 }
 
 .cursor-pointer {

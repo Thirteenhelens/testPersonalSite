@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export default function AboutPage() {
   return (
-    <div id="aboutContainer" class="bg-light h-screen w-screen">
+    <div id="aboutContainer" class="bg-light min-h-screen min-w-screen">
       <div class="p-5 grid justify-items-center">
         <div />
         <div id="header" class="p-5 bg-lighter text-center ">
@@ -22,9 +22,9 @@ export default function AboutPage() {
         </div>
       </div>
 
-      <div id="content" class="pt-40 p-10 pointer-events-none	">
+      <div id="content" class="pt-40 p-10">
         <div id="bio">
-          <p class="text-5xl font-bold">who is Jack?</p>
+          <p class="text-5xl font-bold  pointer-events-none">who is Jack?</p>
           <br />
           <p>
             Good question! As a lifelong gamer, I have a vested interest in
