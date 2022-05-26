@@ -23,13 +23,13 @@ export default function LandingPage() {
       <div />
 
       <div {...heyHoverProps} class="bg-main p-4 hover:bg-light cursor-pointer">
-        <p class="text-7xl">
+        <p class="text-7xl font-Cairo">
           {heyHover ? <Link to="/ContactMe">contact</Link> : "hey!"}
         </p>
       </div>
 
-      <div {...imHoverProps} class="bg-main p-4 hover:bg-light cursor-pointer">
-        <p class="text-7xl">
+      <div {...imHoverProps} class="bg-main p-4 hover:bg-light cursor-pointer ">
+        <p class="text-7xl font-Cairo">
           {imHover ? <Link to="/MyWork">my work</Link> : "I'm"}
         </p>
       </div>
@@ -38,14 +38,16 @@ export default function LandingPage() {
         {...jackHoverProps}
         class="bg-main p-4 hover:bg-light cursor-pointer"
       >
-        <p class="text-7xl">
+        <p class="text-7xl font-Cairo">
           {jackHover ? <Link to="/AboutMe">about</Link> : "Jack"}
         </p>
       </div>
       <div />
 
       <div>
-        <p class="text-white sm:opacity-0">tap on a card to get started :)</p>
+        <p class="text-white sm:opacity-0 font-Cairo">
+          tap on a card to get started :)
+        </p>
       </div>
     </div>
   );

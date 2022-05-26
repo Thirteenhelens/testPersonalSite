@@ -482,16 +482,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   pointer-events: none;
 }
 
+.m-5 {
+  margin: 1.25rem;
+}
+
+.ml-1 {
+  margin-left: 0.25rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
 .grid {
   display: grid;
 }
 
 .h-screen {
   height: 100vh;
-}
-
-.min-h-full {
-  min-height: 100%;
 }
 
 .min-h-screen {
@@ -502,8 +510,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 100vw;
 }
 
-.min-w-full {
-  min-width: 100%;
+.w-2\/3 {
+  width: 66.666667%;
 }
 
 .cursor-pointer {
@@ -516,6 +524,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .gap-y-20 {
   row-gap: 5rem;
+}
+
+.rounded {
+  border-radius: 0.25rem;
+}
+
+.border {
+  border-width: 1px;
 }
 
 .bg-light {
@@ -555,8 +571,22 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding: 2.5rem;
 }
 
+.p-8 {
+  padding: 2rem;
+}
+
 .p-2 {
   padding: 0.5rem;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .pt-40 {
@@ -569,6 +599,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .text-center {
   text-align: center;
+}
+
+.font-Cairo {
+  font-family: Cairo;
 }
 
 .text-8xl {
@@ -586,6 +620,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1;
 }
 
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
 .text-7xl {
   font-size: 4.5rem;
   line-height: 1;
@@ -595,14 +634,46 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-weight: 700;
 }
 
+.tracking-wide {
+  letter-spacing: 0.025em;
+}
+
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.shadow-md {
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow {
+  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.hover\:bg-lighter:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(219 194 207 / var(--tw-bg-opacity));
+}
+
 .hover\:bg-light:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(159 162 178 / var(--tw-bg-opacity));
+}
+
+.hover\:text-darker:hover {
+  --tw-text-opacity: 1;
+  color: rgb(22 38 46 / var(--tw-text-opacity));
+}
+
+.hover\:shadow-lg:hover {
+  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 @media (min-width: 640px) {
