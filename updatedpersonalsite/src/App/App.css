@@ -490,20 +490,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 100vh;
 }
 
-.min-h-full {
-  min-height: 100%;
-}
-
 .min-h-screen {
   min-height: 100vh;
 }
 
 .w-screen {
   width: 100vw;
-}
-
-.min-w-full {
-  min-width: 100%;
 }
 
 .cursor-pointer {
@@ -518,6 +510,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   row-gap: 5rem;
 }
 
+.bg-darker {
+  --tw-bg-opacity: 1;
+  background-color: rgb(22 38 46 / var(--tw-bg-opacity));
+}
+
+.bg-main {
+  --tw-bg-opacity: 1;
+  background-color: rgb(60 122 137 / var(--tw-bg-opacity));
+}
+
 .bg-light {
   --tw-bg-opacity: 1;
   background-color: rgb(159 162 178 / var(--tw-bg-opacity));
@@ -528,19 +530,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(219 194 207 / var(--tw-bg-opacity));
 }
 
-.bg-main {
-  --tw-bg-opacity: 1;
-  background-color: rgb(60 122 137 / var(--tw-bg-opacity));
-}
-
 .bg-dark {
   --tw-bg-opacity: 1;
   background-color: rgb(46 71 86 / var(--tw-bg-opacity));
-}
-
-.bg-darker {
-  --tw-bg-opacity: 1;
-  background-color: rgb(22 38 46 / var(--tw-bg-opacity));
 }
 
 .p-5 {
@@ -571,6 +563,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   text-align: center;
 }
 
+.text-7xl {
+  font-size: 4.5rem;
+  line-height: 1;
+}
+
 .text-8xl {
   font-size: 6rem;
   line-height: 1;
@@ -583,11 +580,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .text-5xl {
   font-size: 3rem;
-  line-height: 1;
-}
-
-.text-7xl {
-  font-size: 4.5rem;
   line-height: 1;
 }
 
