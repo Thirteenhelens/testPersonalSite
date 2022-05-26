@@ -2,7 +2,10 @@ import { Link } from "react-router-dom";
 
 export default function AboutPage() {
   return (
-    <div id="aboutContainer" class="bg-light min-h-screen min-w-screen">
+    <div
+      id="aboutContainer"
+      class="bg-light min-h-screen min-w-screen font-Cairo"
+    >
       <div class="p-5 grid justify-items-center">
         <div />
         <div id="header" class="p-5 bg-lighter text-center ">
@@ -26,7 +29,7 @@ export default function AboutPage() {
         <div id="bio">
           <p class="text-5xl font-bold  pointer-events-none">who is Jack?</p>
           <br />
-          <p>
+          <p class="">
             Good question! As a lifelong gamer, I have a vested interest in
             technology. Not just overall, but all of the intricacies behind how
             things work. As I grew up, my intrigue increased and I started
