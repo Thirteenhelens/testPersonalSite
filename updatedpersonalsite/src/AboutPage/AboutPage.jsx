@@ -1,23 +1,28 @@
+import { Link } from "react-router-dom";
+
 export default function AboutPage() {
   return (
     <div id="aboutContainer" class="bg-light h-screen w-screen">
       <div class="p-5 grid justify-items-center">
         <div />
-        <div id="header" class="p-5 bg-lighter text-center">
-          <h1 class="text-8xl">about Jack</h1>
+        <div id="header" class="p-5 bg-lighter text-center ">
+          <Link to="/Home">
+            <h1 class="text-8xl">about Jack</h1>
+          </Link>
         </div>
         <div />
       </div>
 
+      {/* move this further down? */}
       <div class="grid justify-items-center">
-        <div id="tagline" class="p-4 bg-main text-center">
+        <div id="tagline" class="p-4 bg-main text-center pointer-events-none">
           <p class="text-lg">
             web developer in the front end, gamer in the back end
           </p>
         </div>
       </div>
 
-      <div id="content" class="pt-40 p-10">
+      <div id="content" class="pt-40 p-10 pointer-events-none	">
         <div id="bio">
           <p class="text-5xl font-bold">who is Jack?</p>
           <br />
@@ -34,15 +39,14 @@ export default function AboutPage() {
             technical fascination, the logical nature of computers motivated me
             to try and add personality and life to whatever I made.
           </p>
-          <p class="text-5xl font-bold">?</p>
+          <p class="text-5xl font-bold pt-10">?</p>
         </div>
 
-        {/* <div id="wordMap">
+        <div id="wordMap">
           <p>word map thing</p>
-        </div> */}
+        </div>
       </div>
 
-      {/* 
       <div id="me">
         <div id="img">
           <p>image placeholder</p>
@@ -50,7 +54,7 @@ export default function AboutPage() {
         <div>
           <p>name, title, buttons</p>
         </div>
-      </div> */}
+      </div>
     </div>
   );
 }
