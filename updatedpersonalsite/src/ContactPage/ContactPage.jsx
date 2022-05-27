@@ -31,37 +31,38 @@ export default function ContactPage() {
         <div />
         <div id="header" class="p-5 bg-lighter text-center">
           <Link to="/Home">
-            <h1 class="text-8xl">get in touch with me</h1>
+            <h1 class="text-5xl md:text-8xl">get in touch with me</h1>
           </Link>
         </div>
         <div />
       </div>
 
-      <div id="socials" class="bg-light">
-        <nav>
+      <div id="socials" class="bg-light grid grid-cols-3">
+        <div />
+        <nav class="justify-center">
           <a
             target="_blank"
             rel="noreferrer"
             href="https://www.linkedin.com/in/jack-barrett02/"
           >
             {" "}
-            LinkedIn{" "}
+            LinkedIn |
           </a>
-          |
           <a
             target="_blank"
             rel="noreferrer"
             href="https://github.com/Thirteenhelens"
           >
             {" "}
-            GitHub{" "}
+            GitHub |
           </a>
-          |<a href="mailto:jbarrett1347@gmail.com"> Email </a>
+          <a href="mailto:jbarrett1347@gmail.com"> Email</a>
         </nav>
+        <div />
       </div>
 
-      {/* <div id="gridForForm"> */}
-      <form onSubmit={onSubmit} class="bg-light shadow-md rounded p-8 m-5">
+      {/* <div id="gridForForm" class="grid grid-rows-4 grid-cols-4"> */}
+      <form onSubmit={onSubmit} class="bg-light p-8 m-5 grid grid-rows-4">
         <div class="text-xs ml-1 pointer-events-none">Name (required)</div>
         <input
           required
@@ -101,7 +102,7 @@ export default function ContactPage() {
           Submit
         </button>
       </form>
-      {/* </div> */}
     </div>
+    // </div>
   );
 }
