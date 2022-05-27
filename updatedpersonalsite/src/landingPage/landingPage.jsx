@@ -34,6 +34,7 @@ export default function LandingPage() {
       md:content-center
       "
     >
+      {/* purposely empty so the 3 boxes are in the center */}
       <div />
 
       <button
