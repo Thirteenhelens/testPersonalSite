@@ -526,6 +526,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   row-gap: 5rem;
 }
 
+.truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.text-ellipsis {
+  text-overflow: ellipsis;
+}
+
+.text-clip {
+  text-overflow: clip;
+}
+
 .rounded {
   border-radius: 0.25rem;
 }
@@ -544,9 +558,19 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(219 194 207 / var(--tw-bg-opacity));
 }
 
+.bg-main {
+  --tw-bg-opacity: 1;
+  background-color: rgb(60 122 137 / var(--tw-bg-opacity));
+}
+
 .bg-dark {
   --tw-bg-opacity: 1;
   background-color: rgb(46 71 86 / var(--tw-bg-opacity));
+}
+
+.bg-darker {
+  --tw-bg-opacity: 1;
+  background-color: rgb(22 38 46 / var(--tw-bg-opacity));
 }
 
 .p-5 {
@@ -664,6 +688,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.focus\:bg-light:focus {
+  --tw-bg-opacity: 1;
+  background-color: rgb(159 162 178 / var(--tw-bg-opacity));
 }
 
 @media (min-width: 640px) {
