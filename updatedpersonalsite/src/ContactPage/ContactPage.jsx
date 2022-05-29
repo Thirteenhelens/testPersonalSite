@@ -35,11 +35,9 @@ export default function ContactPage() {
           </Link>
         </div>
         <div />
-      </div>
+        {/* </div> */}
 
-      <div id="socials" class="bg-light grid grid-cols-3">
-        <div />
-        <nav class="justify-center">
+        <div id="socials" class="bg-light text-center p-5 mt-5">
           <a
             target="_blank"
             rel="noreferrer"
@@ -57,43 +55,51 @@ export default function ContactPage() {
             GitHub |
           </a>
           <a href="mailto:jbarrett1347@gmail.com"> Email</a>
-        </nav>
-        <div />
+        </div>
       </div>
 
       {/* <div id="gridForForm" class="grid grid-rows-4 grid-cols-4"> */}
-      <form onSubmit={onSubmit} class="bg-light p-8 m-5 grid grid-rows-4">
-        <div class="text-xs ml-1 pointer-events-none">Name (required)</div>
-        <input
-          required
-          type="text"
-          name="from_name"
-          placeholder="John Doe"
-          onChange={handleChange}
-          value={toSend.from_name}
-          class="form-control shadow border rounded w-2/3 p-2 mb-4 tracking-wide"
-        />
+      <form onSubmit={onSubmit} class="bg-light p-8 m-5 grid grid-cols-5">
+        
+        <div />
+        <div>
+          <p class="text-xs ml-1 pointer-events-none">Name (required)</p>
+          <input
+            required
+            type="text"
+            name="from_name"
+            placeholder="John Doe"
+            onChange={handleChange}
+            value={toSend.from_name}
+            class="form-control shadow border rounded w-2/3 p-2 mb-4 tracking-wide"
+          />
+        </div>
 
-        <div class="text-xs ml-1 pointer-events-none">Email (yours)</div>
-        <input
-          type="email"
-          name="reply_to"
-          value={toSend.reply_to}
-          onChange={handleChange}
-          placeholder="example@adress.com"
-          class="shadow border rounded w-2/3 p-2 mb-4"
-        />
+        <div>
+          <div class="text-xs ml-1 pointer-events-none">Email (yours)</div>
+          <input
+            type="email"
+            name="reply_to"
+            value={toSend.reply_to}
+            onChange={handleChange}
+            placeholder="example@adress.com"
+            class="shadow border rounded w-2/3 p-2 mb-4"
+          />
+        </div>
 
-        <div class="text-xs ml-1 pointer-events-none">Message (required)</div>
-        <textarea
-          required
-          type="text"
-          name="message"
-          value={toSend.message}
-          onChange={handleChange}
-          class="shadow border rounded w-2/3 p-2 mb-4"
-          placeholder="I'd love to talk to you about..."
-        />
+        <div>
+          <div class="text-xs ml-1 pointer-events-none">Message (required)</div>
+          <textarea
+            required
+            type="text"
+            name="message"
+            value={toSend.message}
+            onChange={handleChange}
+            class="shadow border rounded w-2/3 p-2 mb-4"
+            placeholder="I'd love to talk to you about..."
+          />
+        </div>
+
         <br />
         <button
           type="submit"
@@ -102,7 +108,7 @@ export default function ContactPage() {
           Submit
         </button>
       </form>
+      {/* </div> */}
     </div>
-    // </div>
   );
 }
