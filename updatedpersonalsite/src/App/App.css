@@ -486,10 +486,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin: 1.25rem;
 }
 
-.mt-5 {
-  margin-top: 1.25rem;
-}
-
 .ml-1 {
   margin-left: 0.25rem;
 }
@@ -506,18 +502,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 100vh;
 }
 
-.h-5 {
-  height: 1.25rem;
-}
-
-.h-12 {
-  height: 3rem;
-}
-
-.h-52 {
-  height: 13rem;
-}
-
 .h-96 {
   height: 24rem;
 }
@@ -526,28 +510,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   min-height: 100vh;
 }
 
-.w-screen {
-  width: 100vw;
-}
-
 .w-2\/3 {
   width: 66.666667%;
+}
+
+.w-screen {
+  width: 100vw;
 }
 
 .cursor-pointer {
   cursor: pointer;
 }
 
-.grid-cols-4 {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-}
-
 .grid-cols-5 {
   grid-template-columns: repeat(5, minmax(0, 1fr));
-}
-
-.grid-rows-4 {
-  grid-template-rows: repeat(4, minmax(0, 1fr));
 }
 
 .justify-items-center {
@@ -556,6 +532,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .gap-y-20 {
   row-gap: 5rem;
+}
+
+.justify-self-center {
+  justify-self: center;
 }
 
 .rounded {
@@ -621,26 +601,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 1rem;
 }
 
-.px-10 {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-}
-
-.px-40 {
-  padding-left: 10rem;
-  padding-right: 10rem;
-}
-
-.px-60 {
-  padding-left: 15rem;
-  padding-right: 15rem;
-}
-
-.py-5 {
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
-}
-
 .pt-40 {
   padding-top: 10rem;
 }
@@ -678,6 +638,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1;
 }
 
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -707,9 +677,23 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(159 162 178 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-darker:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(22 38 46 / var(--tw-bg-opacity));
+}
+
+.hover\:uppercase:hover {
+  text-transform: uppercase;
+}
+
 .hover\:text-darker:hover {
   --tw-text-opacity: 1;
   color: rgb(22 38 46 / var(--tw-text-opacity));
+}
+
+.hover\:text-white:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .hover\:shadow-lg:hover {
