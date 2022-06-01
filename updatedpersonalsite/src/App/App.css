@@ -540,6 +540,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-width: 1px;
 }
 
+.bg-darker {
+  --tw-bg-opacity: 1;
+  background-color: rgb(22 38 46 / var(--tw-bg-opacity));
+}
+
+.bg-main {
+  --tw-bg-opacity: 1;
+  background-color: rgb(60 122 137 / var(--tw-bg-opacity));
+}
+
 .bg-light {
   --tw-bg-opacity: 1;
   background-color: rgb(159 162 178 / var(--tw-bg-opacity));
@@ -550,19 +560,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(219 194 207 / var(--tw-bg-opacity));
 }
 
-.bg-main {
-  --tw-bg-opacity: 1;
-  background-color: rgb(60 122 137 / var(--tw-bg-opacity));
-}
-
 .bg-dark {
   --tw-bg-opacity: 1;
   background-color: rgb(46 71 86 / var(--tw-bg-opacity));
-}
-
-.bg-darker {
-  --tw-bg-opacity: 1;
-  background-color: rgb(22 38 46 / var(--tw-bg-opacity));
 }
 
 .p-5 {
@@ -611,6 +611,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-family: Cairo;
 }
 
+.text-7xl {
+  font-size: 4.5rem;
+  line-height: 1;
+}
+
 .text-8xl {
   font-size: 6rem;
   line-height: 1;
@@ -629,11 +634,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
-}
-
-.text-7xl {
-  font-size: 4.5rem;
-  line-height: 1;
 }
 
 .font-bold {
@@ -661,14 +661,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.hover\:bg-lighter:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(219 194 207 / var(--tw-bg-opacity));
-}
-
 .hover\:bg-light:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(159 162 178 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-lighter:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(219 194 207 / var(--tw-bg-opacity));
 }
 
 .hover\:text-darker:hover {
