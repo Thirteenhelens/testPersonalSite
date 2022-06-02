@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export default function ContactPage() {
   return (
-    <div id="contactContainer" class="bg-dark w-full h-full">
+    <div id="contactContainer" class="bg-dark w-screen h-screen font-Cairo">
       <div class="p-5 grid justify-items-center">
         <div id="header" class="p-5 bg-lighter text-center">
           <Link to="/Home">
